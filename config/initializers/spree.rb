@@ -14,6 +14,9 @@ Spree.config do |config|
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
   config.currency = 'INR'
+  # below segment should be removed for first deployment
+  country = Spree::Country.find_by_name('India')
+  config.default_country_id = country.id if country.present?
 end
 
 Spree.user_class = "Spree::User"

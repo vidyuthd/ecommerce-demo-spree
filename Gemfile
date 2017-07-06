@@ -57,3 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'spree', '~> 3.2.0'
 gem 'spree_auth_devise', '~> 3.2'
 gem 'spree_gateway', '~> 3.2'
+
+
+# project custom extensions
+gem 'spree_cloudinary', path: './extensions/cloudinary'
